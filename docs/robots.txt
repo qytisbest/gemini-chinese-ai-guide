@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qytisbest.github.io/gemini-chinese-ai-guide/sitemap.xml
