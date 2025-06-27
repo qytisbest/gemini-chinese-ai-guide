@@ -49,7 +49,7 @@ Gemini中文AI导航 - 精选AI工具导航网站
 - 无限流量、包月/包年灵活付费
 - 稳定不掉线，流畅不卡顿
 
-👉 [点此前往青云梯官网](https://qyt.cloud)
+👉 [点此前往青云梯官网](https://ivt01.qytaff.cc/register?aff=X0bVMVya)
 
 > 推荐长期使用，体验稳定如常。
 
