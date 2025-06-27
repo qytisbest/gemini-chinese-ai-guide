@@ -1,42 +1,141 @@
 body {
-  font-family: Arial, 'Microsoft Yahei', sans-serif;
-  background-color: #f4f8ff;
-  color: #333;
-  line-height: 1.6;
+  font-family: '微软雅黑', Arial, sans-serif;
+  background: #f4f8ff;
+  color: #222;
   margin: 0;
   padding: 0;
 }
-header, main, footer {
-  max-width: 800px;
+
+header {
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+}
+.logo {
+  height: 52px;
+  margin-bottom: 12px;
+}
+.year {
+  font-size: 0.85em;
+  color: #666;
+  margin-left: 8px;
+}
+.desc {
+  margin: 0 0 10px 0;
+  color: #456;
+  font-size: 1.14em;
+}
+
+.ai-list {
+  max-width: 750px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 0 10px 0;
+}
+.ai-list h2 {
+  margin-bottom: 25px;
+  font-size: 1.5em;
   text-align: center;
 }
-h1 {
-  font-size: 2rem;
-  color: #222;
+.ai-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #fff;
+  margin-bottom: 22px;
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #0042d125;
+  transition: box-shadow 0.2s;
 }
-.links {
+.ai-card:hover { box-shadow: 0 6px 32px #0042d130; }
+.ai-card img { width: 58px; height: 58px; border-radius: 8px; }
+.ai-card h3 { margin: 0 0 6px 0; font-size: 1.18em; }
+.ai-update { color: #3571f7; font-size: .93em; margin: 2px 0 5px 0; }
+.btn-main {
+  display: inline-block;
+  background: #3568ff;
+  color: #fff;
+  border: none;
+  padding: 8px 22px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s;
+}
+.btn-main:hover { background: #203f93; }
+
+.proxy-support {
+  max-width: 760px;
+  margin: 38px auto 0 auto;
+  padding: 18px 16px 28px 16px;
+  background: #e5eeff;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px #0050c228;
+}
+.proxy-support h2 { margin: 0 0 14px 0; font-size: 1.23em; }
+.tag-best {
+  display: inline-block;
+  background: #ff9100d4;
+  color: #fff;
+  font-size: .98em;
+  border-radius: 6px;
+  padding: 0 7px;
+  margin-left: 5px;
+}
+.logo-sm { height: 38px; vertical-align: middle; margin-right: 10px; }
+.proxy-support ul { margin: 12px 0 12px 22px; }
+.proxy-support li { margin: 6px 0; }
+.btn-qyt {
+  display: inline-block;
+  background: #3ed47c;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 25px;
+  border-radius: 7px;
+  font-size: 1.12em;
+  margin-top: 12px;
+  text-decoration: none;
+  transition: background .2s;
+}
+.btn-qyt:hover { background: #11985a; }
+.highlight { color: #3568ff; font-weight: bold; }
+
+.feedback {
+  max-width: 740px;
+  margin: 38px auto 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 20px 24px 20px;
+  box-shadow: 0 2px 18px #0050c21a;
+}
+.feedback h2 { margin-bottom: 14px; }
+form[name=contact] {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 30px;
+  gap: 10px;
 }
-.link {
-  display: block;
-  background-color: #3366ff;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
+form[name=contact] input, form[name=contact] textarea {
+  font-size: 1.05em;
+  border: 1.5px solid #b7c7f5;
   border-radius: 6px;
-  transition: background-color 0.3s;
-  font-weight: bold;
+  padding: 8px;
+  resize: vertical;
 }
-.link:hover {
-  background-color: #254eda;
-}
+form[name=contact] textarea { min-height: 56px; }
+.note { color: #888; font-size: .95em; margin-top: 10px; }
 footer {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #777;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 24px;
+  color: #888;
+  font-size: .98em;
+}
+@media (max-width: 800px) {
+  .ai-card, .proxy-support, .feedback {
+    flex-direction: column !important;
+    padding: 12px;
+  }
+  .ai-list, .proxy-support, .feedback { max-width: 99vw; }
 }
