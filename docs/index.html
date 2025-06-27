@@ -77,11 +77,13 @@
 
     <section class="feedback">
       <h2>📬 用户留言/推荐</h2>
-      <form name="contact" netlify>
-        <input type="text" name="name" placeholder="您的昵称" required>
-        <textarea name="message" placeholder="您对AI工具、机场或本导航的建议/反馈……" required></textarea>
-        <button type="submit" class="btn-main">提交留言</button>
-      </form>
+  <form action="https://formspree.io/f/https://formspree.io/f/meokvekv" method="POST" class="feedback-form" id="contact-form">
+  <input type="text" name="name" placeholder="您的昵称" required>
+  <textarea name="message" placeholder="您对AI工具、机场或本导航的建议/反馈……" required></textarea>
+  <button type="submit" class="btn-main">提交留言</button>
+  <div id="form-status" style="display:none;margin-top:8px;color:#27ae60;">留言已成功发送！感谢您的建议。</div>
+</form>
+
       <p class="note">（留言功能基于Netlify表单/静态邮件，也可以改为飞书/钉钉/邮箱接收）</p>
     </section>
 
