@@ -220,3 +220,34 @@ footer {
   .feedback-form textarea, .feedback-form input { min-width: 0; max-width: 100%; }
   .feedback .btn-main { margin-left: 0; }
 }
+.quick-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 18px 0 12px 0;
+}
+.qnav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 22px;
+  background: #f2f7ff;
+  color: #3568ff;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  border: 1.5px solid #c2dafc;
+  transition: background 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 6px #bcd5ff30;
+}
+.qnav-btn:hover {
+  background: #dceeff;
+  color: #2148c6;
+}
+.icon-btn {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: middle;
+  margin-right: 2px;
+}
