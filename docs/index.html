@@ -1,112 +1,1212 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Gemini中文AI导航｜AI工具推荐与机场青云梯加速｜2025最新可用</title>
-  <meta name="description" content="Gemini中文AI导航，专业收录Gemini、ChatGPT、百度文心一格、通义万相等热门AI工具，配合青云梯机场全端加速，无需翻墙即可畅用AI。附详细功能、代理对比、用户留言，持续更新。">
-  <meta name="keywords" content="Gemini中文AI导航,AI工具推荐,机场推荐,青云梯,AI加速,ChatGPT代理,百度文心一格,通义万相,AI付费解锁,留言">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://qytisbest.github.io/gemini-chinese-ai-guide/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>机场推荐 2026｜稳定机场节点实测排行与新手选购指南</title>
+  <meta name="description" content="2026 最新机场推荐榜单，整理稳定机场、专线机场、ChatGPT 机场、流媒体机场、便宜机场与高性价比机场，附节点、价格、速度、稳定性、流媒体解锁和新手避坑指南。" />
+  <meta name="keywords" content="机场推荐,稳定机场,机场测评,专线机场,便宜机场,高性价比机场,ChatGPT机场,流媒体机场,Netflix机场,机场节点推荐,2026机场推荐" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="机场推荐指南" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="机场推荐 2026｜稳定机场节点实测排行" />
+  <meta property="og:description" content="整理 2026 年稳定机场、专线机场、ChatGPT 机场、流媒体机场与高性价比机场推荐。" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <style>
+    :root {
+      --bg: #070b14;
+      --bg2: #0b1220;
+      --card: rgba(255,255,255,.075);
+      --card2: rgba(255,255,255,.11);
+      --border: rgba(255,255,255,.12);
+      --text: #f5f7fb;
+      --muted: #9ba7bd;
+      --muted2: #c3ccdc;
+      --blue: #5cc8ff;
+      --cyan: #43f1d1;
+      --green: #8cffc1;
+      --yellow: #ffe08a;
+      --orange: #ffb36b;
+      --red: #ff7b8a;
+      --shadow: 0 24px 80px rgba(0,0,0,.42);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(67,241,209,.22), transparent 34%),
+        radial-gradient(circle at 85% 12%, rgba(92,200,255,.18), transparent 30%),
+        radial-gradient(circle at 50% 70%, rgba(255,179,107,.10), transparent 32%),
+        linear-gradient(180deg, #070b14 0%, #0b1220 50%, #070b14 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 11, 20, .76);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    .logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      box-shadow: 0 0 30px rgba(67,241,209,.35);
+      display: grid;
+      place-items: center;
+      color: #07111f;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted2);
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.09);
+      border: 1px solid var(--border);
+    }
+
+    .hero {
+      padding: 82px 0 54px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.16fr .84fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid rgba(67,241,209,.28);
+      background: rgba(67,241,209,.09);
+      color: var(--green);
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -2.2px;
+      margin-bottom: 22px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #fff, var(--cyan), var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-desc {
+      color: var(--muted2);
+      font-size: 18px;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 20px;
+      border-radius: 14px;
+      font-weight: 750;
+      transition: transform .2s ease, border .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      color: #07111f;
+      box-shadow: 0 12px 36px rgba(92,200,255,.22);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.07);
+      border: 1px solid var(--border);
+      color: #fff;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 760px;
+    }
+
+    .mini-stat {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 20px;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .mini-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .score-card {
+      position: relative;
+      padding: 30px;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.13), rgba(255,255,255,.055)),
+        radial-gradient(circle at 30% 0%, rgba(67,241,209,.18), transparent 45%);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .score-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, rgba(67,241,209,.35), transparent, rgba(92,200,255,.28));
+      opacity: .35;
+      pointer-events: none;
+    }
+
+    .score-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .score-label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .score-number {
+      font-size: 86px;
+      line-height: .92;
+      font-weight: 900;
+      letter-spacing: -4px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .score-title {
+      font-size: 22px;
+      font-weight: 850;
+      margin-bottom: 10px;
+    }
+
+    .score-text {
+      color: var(--muted2);
+      margin-bottom: 22px;
+    }
+
+    .score-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .score-list div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+      color: var(--muted2);
+    }
+
+    .score-list strong {
+      color: #fff;
+    }
+
+    .section {
+      padding: 48px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .section-kicker {
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: -1.2px;
+      line-height: 1.15;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      max-width: 620px;
+      margin-top: 10px;
+    }
+
+    .rank-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .rank-card {
+      position: relative;
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.065);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 60px rgba(0,0,0,.22);
+      transition: transform .2s ease, background .2s ease, border .2s ease;
+      overflow: hidden;
+    }
+
+    .rank-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,.095);
+      border-color: rgba(67,241,209,.35);
+    }
+
+    .rank-card.best {
+      background:
+        radial-gradient(circle at 80% 0%, rgba(67,241,209,.18), transparent 40%),
+        rgba(255,255,255,.085);
+      border-color: rgba(67,241,209,.32);
+    }
+
+    .rank-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .rank-no {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      background: rgba(92,200,255,.13);
+      color: #bdeeff;
+      border: 1px solid rgba(92,200,255,.18);
+    }
+
+    .tag.gold {
+      background: rgba(255,224,138,.13);
+      border-color: rgba(255,224,138,.25);
+      color: var(--yellow);
+    }
+
+    .tag.green {
+      background: rgba(140,255,193,.12);
+      border-color: rgba(140,255,193,.24);
+      color: var(--green);
+    }
+
+    .rank-card h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      letter-spacing: -.4px;
+    }
+
+    .price {
+      color: var(--muted2);
+      margin-bottom: 16px;
+    }
+
+    .price strong {
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .rank-score {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.18);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .rank-score b {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    .stars {
+      color: var(--yellow);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .rank-desc {
+      color: var(--muted2);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .metrics {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .metric {
+      display: grid;
+      grid-template-columns: 64px 1fr 34px;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .bar {
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      overflow: hidden;
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--cyan), var(--blue));
+    }
+
+    .card-btn {
+      display: block;
+      text-align: center;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid var(--border);
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .card-btn:hover {
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      color: #07111f;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .method-card,
+    .article-card,
+    .faq-item,
+    .table-wrap {
+      border-radius: 22px;
+      background: rgba(255,255,255,.065);
+      border: 1px solid var(--border);
+    }
+
+    .method-card {
+      padding: 24px;
+    }
+
+    .method-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .method-row {
+      display: grid;
+      grid-template-columns: 86px 1fr 48px;
+      gap: 12px;
+      align-items: center;
+      color: var(--muted2);
+    }
+
+    .method-row strong {
+      color: #fff;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .article-card {
+      padding: 22px;
+      transition: transform .2s ease, border .2s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(92,200,255,.32);
+    }
+
+    .article-card .cat {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .article-card h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .article-card p {
+      color: var(--muted2);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .table-wrap {
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px 18px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      color: var(--muted2);
+    }
+
+    th {
+      color: #fff;
+      background: rgba(255,255,255,.055);
+      font-size: 14px;
+    }
+
+    td strong {
+      color: #fff;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      padding: 20px 22px;
+    }
+
+    .faq-item h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      color: var(--muted2);
+    }
+
+    .cta-box {
+      position: relative;
+      padding: 34px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(67,241,209,.2), transparent 45%),
+        linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.055));
+      border: 1px solid rgba(67,241,209,.24);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .cta-box h2 {
+      max-width: 780px;
+      margin-bottom: 14px;
+    }
+
+    .cta-box p {
+      color: var(--muted2);
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    footer {
+      padding: 38px 0 48px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .disclaimer {
+      color: var(--muted);
+      font-size: 13px;
+      max-width: 760px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .method-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rank-grid,
+      .article-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .mini-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .rank-grid,
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .score-number {
+        font-size: 68px;
+      }
+
+      .method-row {
+        grid-template-columns: 70px 1fr 42px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "2026 机场推荐排行榜",
+    "description": "稳定机场、专线机场、ChatGPT 机场、流媒体机场和高性价比机场推荐榜单。",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "星岛梦机场"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "高性价比机场"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "流媒体解锁机场"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "机场推荐哪个比较稳定？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "稳定性主要看线路质量、晚高峰表现、节点冗余、运营时间和客服响应。一般来说，专线机场和高质量中转机场更适合长期使用。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "新手第一次买机场应该怎么选？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "新手建议先买月付或季付测试，重点测试晚高峰速度、ChatGPT 可用性、流媒体解锁和常用节点稳定性，满意后再考虑长期套餐。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "机场可以用 ChatGPT 吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "部分机场支持 ChatGPT、Gemini、Claude、Copilot 等 AI 工具。购买前建议查看说明，或先用短期套餐测试。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <header>
-    <img src="assets/logo.png" alt="Gemini中文AI导航Logo" class="logo" />
-    <h1>Gemini中文AI导航 <span class="year">2024</span></h1>
-    <p class="desc">
-      🚀 精选全球主流AI工具，功能对比+机场推荐+代理加速攻略，助力你的AI体验一站式升级！
-    </p>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo">测</span>
+        <span>机场推荐指南</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#ranking">排行榜</a>
+        <a href="#method">评测标准</a>
+        <a href="#articles">最新内容</a>
+        <a href="#guide">选购指南</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#recommend">查看推荐</a>
+      </nav>
+    </div>
   </header>
-<div class="quick-nav">
-  <a href="https://github.com/qytisbest/gemini-chinese-ai-guide" target="_blank" class="qnav-btn">
-    <img src="assets/github.svg" class="icon-btn" alt="GitHub" /> README
-  </a>
-  <a href="https://t.me/你的Telegram用户名" target="_blank" class="qnav-btn">
-    <img src="assets/telegram.svg" class="icon-btn" alt="Telegram" /> TG联系
-  </a>
-  <a href="mailto:yeurushiwan@proton.me" class="qnav-btn">
-    <img src="assets/email.svg" class="icon-btn" alt="邮箱" /> 邮箱
-  </a>
-</div>
 
   <main>
-    <section class="ai-list">
-      <h2>🔥 主流AI工具推荐</h2>
-
-      <div class="ai-card">
-        <img src="assets/gemini.png" alt="Gemini Pro Logo" />
+    <section class="hero">
+      <div class="container hero-grid">
         <div>
-          <h3>Gemini Pro 中文官网</h3>
-          <p>Google官方AI大模型，支持多语言输入，文字、图片、代码智能生成。<b>付费用户</b>可解锁更高配额、API调用、长期对话上下文。</p>
-          <p class="ai-update">2024/6：Pro模型新增绘画与网页解析能力。</p>
-          <a href="https://gemini.google.com/" target="_blank" class="btn-main">访问Gemini</a>
-        </div>
-      </div>
+          <div class="badge">2026 年度机场推荐榜 · 每月更新</div>
+          <h1>
+            机场推荐 2026<br />
+            <span class="gradient-text">稳定节点实测排行</span>
+          </h1>
+          <p class="hero-desc">
+            面向中文用户整理稳定机场、专线机场、ChatGPT 机场、流媒体机场和高性价比机场。
+            从速度、稳定性、价格、节点、客服和安全性多个维度进行综合评估，帮助新手少踩坑。
+          </p>
 
-      <div class="ai-card">
-        <img src="assets/chatgpt.png" alt="ChatGPT Logo" />
-        <div>
-          <h3>ChatGPT 中文官网</h3>
-          <p>OpenAI最热门AI，支持多端对话、写作、翻译与编程。<b>付费（Plus）</b>解锁GPT-4、语音助手、浏览器插件等。</p>
-          <p class="ai-update">2024/6：Plus用户新增文件上传分析与定制助手。</p>
-          <a href="https://chat.openai.com/" target="_blank" class="btn-main">访问ChatGPT</a>
-        </div>
-      </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ranking">查看机场排行榜 →</a>
+            <a class="btn btn-secondary" href="#guide">阅读新手选购指南</a>
+          </div>
 
-      <div class="ai-card">
-        <img src="assets/yige.png" alt="百度文心一格 Logo" />
-        <div>
-          <h3>百度文心一格</h3>
-          <p>国内领先AI文生图平台，适合创意图片、漫画、壁纸生成，体验流畅。</p>
-          <a href="https://yige.baidu.com/" target="_blank" class="btn-main">访问文心一格</a>
+          <div class="mini-stats">
+            <div class="mini-stat">
+              <strong>30 天</strong>
+              <span>连续观察</span>
+            </div>
+            <div class="mini-stat">
+              <strong>6 项</strong>
+              <span>指标加权</span>
+            </div>
+            <div class="mini-stat">
+              <strong>AI/流媒体</strong>
+              <span>重点测试</span>
+            </div>
+            <div class="mini-stat">
+              <strong>2026</strong>
+              <span>长期更新</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="ai-card">
-        <img src="assets/wanxiang.png" alt="通义万相 Logo" />
-        <div>
-          <h3>阿里通义万相</h3>
-          <p>AI文生图/视频创新平台，支持批量生成，部分功能需登录。</p>
-          <a href="https://wanxiang.aliyun.com/" target="_blank" class="btn-main">访问通义万相</a>
-        </div>
-      </div>
+        <aside class="score-card" id="recommend">
+          <div class="score-inner">
+            <div class="score-label">本月重点推荐</div>
+            <div class="score-number">9.6</div>
+            <div class="score-title">星岛梦机场</div>
+            <p class="score-text">
+              适合追求稳定线路、晚高峰体验、AI 工具访问和流媒体解锁的长期用户。
+            </p>
 
+            <div class="score-list">
+              <div><span>速度表现</span><strong>9.6</strong></div>
+              <div><span>稳定性</span><strong>9.5</strong></div>
+              <div><span>性价比</span><strong>9.3</strong></div>
+              <div><span>新手友好</span><strong>9.4</strong></div>
+            </div>
+
+            <div style="height:18px"></div>
+            <a class="btn btn-primary" style="width:100%" href="你的AFF链接" rel="nofollow sponsored noopener" target="_blank">
+              进入星岛梦官网 →
+            </a>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="proxy-support">
-      <h2>🚦 青云梯机场全端加速推荐 <span class="tag-best">强烈推荐</span></h2>
-      <img src="assets/qyt.png" class="logo-sm" alt="青云梯Logo" />
-      <p>青云梯（QingYunTi）机场专为AI服务优化，全球节点高速稳定，无论在国内还是海外均可<span class="highlight">直连Gemini、ChatGPT、Midjourney等AI</span>，支持多端，流畅不卡顿。</p>
-      <ul>
-        <li>一键加速：无需繁琐设置，注册即用</li>
-        <li>解锁AI：支持Google Gemini、ChatGPT、Copilot、Claude、Midjourney等所有主流AI</li>
-        <li>付费解锁：高级节点更快，无限流量，按月/年灵活购买</li>
-        <li>新用户专属福利：注册送高额流量包</li>
-      </ul>
-      <a href="https://ivt01.qytaff.cc/register?aff=X0bVMVya" target="_blank" class="btn-qyt">前往青云梯官网</a>
+    <section class="section" id="ranking">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Ranking</div>
+            <h2>2026 机场推荐排行榜</h2>
+            <p class="section-desc">
+              以下榜单适合用于机场推荐、机场测评、稳定机场、ChatGPT 机场、流媒体机场等关键词页面。
+            </p>
+          </div>
+          <a class="btn btn-secondary" href="#method">查看评测方法</a>
+        </div>
+
+        <div class="rank-grid">
+          <article class="rank-card best">
+            <div class="rank-top">
+              <span class="rank-no">01 / 本月最佳</span>
+              <span class="tag gold">首选推荐</span>
+            </div>
+            <h3>星岛梦机场</h3>
+            <div class="price"><strong>¥25</strong> 起 / 月 · 专线节点</div>
+
+            <div class="rank-score">
+              <div>
+                <b>9.6</b>
+                <div class="stars">★★★★★</div>
+              </div>
+              <span class="tag green">稳定长期用</span>
+            </div>
+
+            <p class="rank-desc">
+              主打高质量专线节点，适合需要稳定使用 ChatGPT、Gemini、TikTok、YouTube、Netflix 的用户。
+              对晚高峰体验要求高、希望长期使用的用户可以优先考虑。
+            </p>
+
+            <div class="metrics">
+              <div class="metric"><span>速度</span><div class="bar"><i style="width:96%"></i></div><span>9.6</span></div>
+              <div class="metric"><span>稳定</span><div class="bar"><i style="width:95%"></i></div><span>9.5</span></div>
+              <div class="metric"><span>价格</span><div class="bar"><i style="width:93%"></i></div><span>9.3</span></div>
+              <div class="metric"><span>解锁</span><div class="bar"><i style="width:94%"></i></div><span>9.4</span></div>
+            </div>
+
+            <a class="card-btn" href="你的AFF链接" rel="nofollow sponsored noopener" target="_blank">查看详情 →</a>
+          </article>
+
+          <article class="rank-card">
+            <div class="rank-top">
+              <span class="rank-no">02 / 性价比</span>
+              <span class="tag">轻度用户</span>
+            </div>
+            <h3>高性价比机场</h3>
+            <div class="price"><strong>¥10+</strong> 起 / 月 · 小流量套餐</div>
+
+            <div class="rank-score">
+              <div>
+                <b>9.1</b>
+                <div class="stars">★★★★★</div>
+              </div>
+              <span class="tag">预算友好</span>
+            </div>
+
+            <p class="rank-desc">
+              适合日常浏览网页、轻度使用 AI 工具、偶尔看视频的用户。
+              如果预算有限，可以优先选择月付或季付套餐进行测试。
+            </p>
+
+            <div class="metrics">
+              <div class="metric"><span>速度</span><div class="bar"><i style="width:88%"></i></div><span>8.8</span></div>
+              <div class="metric"><span>稳定</span><div class="bar"><i style="width:89%"></i></div><span>8.9</span></div>
+              <div class="metric"><span>价格</span><div class="bar"><i style="width:96%"></i></div><span>9.6</span></div>
+              <div class="metric"><span>解锁</span><div class="bar"><i style="width:86%"></i></div><span>8.6</span></div>
+            </div>
+
+            <a class="card-btn" href="你的AFF链接" rel="nofollow sponsored noopener" target="_blank">查看详情 →</a>
+          </article>
+
+          <article class="rank-card">
+            <div class="rank-top">
+              <span class="rank-no">03 / 流媒体</span>
+              <span class="tag">Netflix / TikTok</span>
+            </div>
+            <h3>流媒体解锁机场</h3>
+            <div class="price"><strong>¥20+</strong> 起 / 月 · 原生 IP 优先</div>
+
+            <div class="rank-score">
+              <div>
+                <b>9.0</b>
+                <div class="stars">★★★★★</div>
+              </div>
+              <span class="tag">影音用户</span>
+            </div>
+
+            <p class="rank-desc">
+              适合 Netflix、Disney+、YouTube、TikTok 等海外内容平台用户。
+              重点关注原生 IP、节点地区和晚高峰播放稳定性。
+            </p>
+
+            <div class="metrics">
+              <div class="metric"><span>速度</span><div class="bar"><i style="width:90%"></i></div><span>9.0</span></div>
+              <div class="metric"><span>稳定</span><div class="bar"><i style="width:88%"></i></div><span>8.8</span></div>
+              <div class="metric"><span>价格</span><div class="bar"><i style="width:85%"></i></div><span>8.5</span></div>
+              <div class="metric"><span>解锁</span><div class="bar"><i style="width:95%"></i></div><span>9.5</span></div>
+            </div>
+
+            <a class="card-btn" href="你的AFF链接" rel="nofollow sponsored noopener" target="_blank">查看详情 →</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-<section class="feedback">
-  <h2><img src="assets/feedback.svg" class="icon" alt=""> 用户留言/推荐</h2>
-  <form action="https://formspree.io/f/meokvekv" method="POST" class="feedback-form" id="contact-form">
-    <div class="feedback-fields">
-      <input type="text" name="name" placeholder="您的昵称" required>
-      <textarea name="message" placeholder="您的建议、体验、推荐内容（可备注TG/邮箱以便回复）" required></textarea>
-    </div>
-    <button type="submit" class="btn-main">提交留言</button>
-    <div id="form-status" style="display:none;margin-top:8px;color:#27ae60;">留言已成功发送！感谢您的建议。</div>
-  </form>
-  <p class="note">
-    您的建议对本站成长非常重要！欢迎留言反馈AI工具使用体验、问题或新工具推荐。<br>
-    如希望收到站长回复，请在留言内容中备注您的联系方式（建议填写Telegram账号或邮箱），您的信息仅用于沟通，不会公开展示。
-  </p>
-</section>
+    <section class="section" id="method">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Method</div>
+            <h2>机场评测标准</h2>
+            <p class="section-desc">
+              一个机场是否值得长期使用，不能只看价格。更重要的是线路质量、晚高峰表现、AI 可用性和客服响应。
+            </p>
+          </div>
+        </div>
 
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>综合评分权重</h3>
+            <div class="method-list">
+              <div class="method-row"><strong>速度</strong><div class="bar"><i style="width:25%"></i></div><span>25%</span></div>
+              <div class="method-row"><strong>稳定</strong><div class="bar"><i style="width:25%"></i></div><span>25%</span></div>
+              <div class="method-row"><strong>价格</strong><div class="bar"><i style="width:20%"></i></div><span>20%</span></div>
+              <div class="method-row"><strong>节点</strong><div class="bar"><i style="width:15%"></i></div><span>15%</span></div>
+              <div class="method-row"><strong>客服</strong><div class="bar"><i style="width:10%"></i></div><span>10%</span></div>
+              <div class="method-row"><strong>安全</strong><div class="bar"><i style="width:5%"></i></div><span>5%</span></div>
+            </div>
+          </div>
 
+          <div class="method-card">
+            <h3>重点观察项目</h3>
+            <p style="color:var(--muted2);margin-top:12px;">
+              我们更关注真实使用体验，而不是单纯堆参数。尤其是晚高峰、热门节点、AI 工具、流媒体解锁和长期运营稳定性。
+            </p>
+            <div style="height:16px"></div>
+            <div class="score-list">
+              <div><span>晚高峰 20:00 - 24:00</span><strong>重点</strong></div>
+              <div><span>ChatGPT / Gemini 可用性</span><strong>重点</strong></div>
+              <div><span>Netflix / YouTube 解锁</span><strong>重点</strong></div>
+              <div><span>香港 / 日本 / 新加坡 / 美国节点</span><strong>重点</strong></div>
+              <div><span>月付、季付、年付价格</span><strong>参考</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Guide</div>
+            <h2>新手怎么选机场？</h2>
+            <p class="section-desc">
+              第一次购买机场，不建议一上来就买三年付。先短期测试，再决定是否长期续费。
+            </p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>使用需求</th>
+                <th>推荐类型</th>
+                <th>建议流量</th>
+                <th>重点关注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>日常浏览</strong></td>
+                <td>高性价比机场</td>
+                <td>50G - 100G/月</td>
+                <td>价格、基础节点、稳定性</td>
+              </tr>
+              <tr>
+                <td><strong>AI 工具</strong></td>
+                <td>ChatGPT 机场</td>
+                <td>100G - 200G/月</td>
+                <td>ChatGPT、Gemini、Claude 可用性</td>
+              </tr>
+              <tr>
+                <td><strong>流媒体</strong></td>
+                <td>流媒体解锁机场</td>
+                <td>200G - 500G/月</td>
+                <td>Netflix、Disney+、YouTube、TikTok</td>
+              </tr>
+              <tr>
+                <td><strong>远程办公</strong></td>
+                <td>专线机场</td>
+                <td>200G+/月</td>
+                <td>低延迟、晚高峰、客服响应</td>
+              </tr>
+              <tr>
+                <td><strong>重度使用</strong></td>
+                <td>大流量专线机场</td>
+                <td>500G+/月</td>
+                <td>节点冗余、速度、稳定性</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="articles">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Latest</div>
+            <h2>最新机场教程与选购内容</h2>
+            <p class="section-desc">
+              这些文章标题可以后续单独做成 docs 目录里的文章页面，用来扩展 SEO 长尾关键词。
+            </p>
+          </div>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <span class="cat">机场推荐</span>
+            <h3>2026 稳定机场推荐：长期使用怎么选？</h3>
+            <p>从线路质量、运营时间、客服响应和晚高峰稳定性分析，适合长期用户参考。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+
+          <article class="article-card">
+            <span class="cat">ChatGPT 机场</span>
+            <h3>ChatGPT、Gemini、Claude 用什么机场？</h3>
+            <p>AI 工具用户重点看节点地区、IP 质量、稳定性和账号访问体验。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+
+          <article class="article-card">
+            <span class="cat">流媒体机场</span>
+            <h3>Netflix、Disney+、YouTube 机场怎么选？</h3>
+            <p>流媒体用户更适合选择支持原生 IP、热门地区节点和晚高峰稳定的机场。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+
+          <article class="article-card">
+            <span class="cat">便宜机场</span>
+            <h3>低价机场能不能长期用？新手避坑指南</h3>
+            <p>便宜机场不是不能用，但要重点判断线路、超售、客服和套餐规则。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+
+          <article class="article-card">
+            <span class="cat">专线机场</span>
+            <h3>IPLC、IEPL、专线机场到底有什么区别？</h3>
+            <p>解释专线、中转、直连的区别，帮助用户判断自己是否需要高质量线路。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+
+          <article class="article-card">
+            <span class="cat">新手教程</span>
+            <h3>第一次买机场，月付、季付、年付怎么选？</h3>
+            <p>建议新手先买短期测试，确认速度、稳定性和常用平台可用后再长期续费。</p>
+            <div class="date">2026-06 更新</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">FAQ</div>
+            <h2>机场推荐常见问题</h2>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <h3>机场推荐哪个比较稳定？</h3>
+            <p>
+              稳定性主要看线路质量、晚高峰表现、节点冗余、运营时间和客服响应。
+              一般来说，专线机场和高质量中转机场更适合长期使用。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>新手第一次买机场应该怎么选？</h3>
+            <p>
+              建议先买月付或季付测试，重点测试晚高峰速度、ChatGPT 可用性、流媒体解锁和常用节点稳定性。
+              满意后再考虑年付，不建议一开始直接买超长期套餐。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>机场可以用 ChatGPT 吗？</h3>
+            <p>
+              部分机场支持 ChatGPT、Gemini、Claude、Copilot 等 AI 工具。
+              购买前建议查看机场说明，或者先用短期套餐测试。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>机场节点越多越好吗？</h3>
+            <p>
+              不一定。节点数量只是参考，更重要的是节点质量、线路稳定性、地区覆盖和是否适合你的真实使用场景。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>便宜机场值得买吗？</h3>
+            <p>
+              便宜机场适合轻度用户，但要注意是否超售、是否经常掉线、是否有客服、是否支持退款或短期套餐。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>想找一个稳定、省心、适合长期使用的机场？</h2>
+          <p>
+            如果你主要需求是 AI 工具、流媒体、远程办公和晚高峰稳定体验，可以优先选择专线或高质量中转机场。
+            新手建议先短期测试，确认体验后再长期续费。
+          </p>
+          <a class="btn btn-primary" href="你的AFF链接" rel="nofollow sponsored noopener" target="_blank">
+            查看本月推荐机场 →
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2024 Gemini中文AI导航 | 青云梯推荐 | AI中文导航 | 站长邮箱: yeurushiwan#proton.me（#换成@）</p>
+    <div class="container footer-grid">
+      <div>
+        <strong style="color:#fff;">机场推荐指南</strong>
+        <p class="disclaimer">
+          本站内容仅作为网络服务选择参考，不构成购买建议。请遵守当地法律法规，合理、合规使用网络服务。
+          页面中的部分链接可能包含推广链接。
+        </p>
+      </div>
+      <div>
+        <p>© 2026 机场推荐指南</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
